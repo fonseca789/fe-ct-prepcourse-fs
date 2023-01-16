@@ -25,6 +25,7 @@ function incrementarPorUno(array) {
    for(let i=0; i < array.length; i++ ) {
       array[i]++;
    }
+   return array
 }
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
@@ -169,15 +170,25 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
-   let tabla6=[];
+   // let tabla6=[];
+   // let num=6;
+   // for (let i = 0; num== 60; i++) { 
+      
+   //    tabla6.push(num);
+   //    num =+6;
+      
+   // }
+   // return tabla6;
+   let tabla=[];
    let num=0;
-   for (let i = 0; num== 60; i++) { 
-      
-      tabla6.push(num);
-      num =+6;
-      
-   }
-   return tabla6;
+    for(let i=0; i <= 10; i++) {
+    //console.log([tabla,num])
+    tabla.push(num)
+    
+    num +=6;
+  }
+  
+  return tabla;
 }
 
 function mayorACien(array) {
