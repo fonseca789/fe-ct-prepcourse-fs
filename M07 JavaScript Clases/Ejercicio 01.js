@@ -15,10 +15,11 @@ function crearUsuario() {
          this.nombre = nombre;
          this.email = email;
          this.password = password;
+         this.saludar = function () {
+            return `Hola, mi nombre es ${this.nombre}`;            
+         }
       }
-      Usuario.prototype.saludar = function () {
-         return `Hola, mi nombre es ${this.nombre}`;
-      }
+     
    return Usuario;
 }
 

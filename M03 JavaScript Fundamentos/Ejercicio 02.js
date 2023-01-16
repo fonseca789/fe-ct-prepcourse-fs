@@ -4,6 +4,7 @@
 function devolverString(string) {
    // Debe retornar un string.
    // Tu código:
+   string.toString();
    return string
 }
 
@@ -24,7 +25,10 @@ function resta(x, y) {
 function divide(x, y) {
    // Retorna el resultado de su división.
    // Tu código:
-   return (x/y);
+   if (y !==0){
+      return (x/y);
+   }else "Infinity"
+   
 }
 
 function multiplica(x, y) {

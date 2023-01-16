@@ -22,7 +22,7 @@ function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
-   return nombre + " "+ apellido
+   return `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
@@ -64,15 +64,17 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if (letra.length > 1){
-      if(letra ==='a' || letra==='A' || letra ==='e' || letra==='E' || letra ==='i' || letra==='I' || letra ==='o' || letra==='O' || letra ==='u' || letra==='U') {
+   if (letra.length > 1) {
+      return "Dato incorrecto";
+   }
+   
+   
+   if(letra ==='a' || letra==='A' || letra ==='e' || letra==='E' || letra ==='i' || letra==='I' || letra ==='o' || letra==='O' || letra ==='u' || letra==='U') {
       return "Es vocal";
    } else {
-      return "Dato incorrecto";
+      return "Dato incorrecto";      
    }
-   }else {
-      return "Dato incorrecto";
-   }
+  
    
 }
 

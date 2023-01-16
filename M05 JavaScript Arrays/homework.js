@@ -22,9 +22,9 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   return array.map((num) => {
-      return num +1;
-   });
+   for(let i=0; i < array.length; i++ ) {
+      array[i]++;
+   }
 }
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
@@ -56,8 +56,7 @@ function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar True si está, o False si no está.
    // Tu código:
-   if (array.includes(elemento)) return true;
-   return false; 
+   return array.includes(elemento)
 }
 
 function agregarNumeros(arrayOfNums) {
@@ -100,7 +99,7 @@ function multiplicarArgumentos() {
    // Tu código:
    if(arguments.length < 1) return 0;
    if (arguments.length === 1) return arguments[0];
-   total =1;
+   let total =1;
    for (let i = 0; i < arguments.length; i++) {
       total = total * arguments[i];
       
@@ -172,9 +171,11 @@ function tablaDelSeis() {
    // Tu código:
    let tabla6=[];
    let num=0;
-   for (let i = 0; i < 10; i++) {  
-      tabla6[i]=num;
-      num += 6;
+   for (let i = 0; num== 60; i++) { 
+      
+      tabla6.push(num);
+      num =+6;
+      
    }
    return tabla6;
 }

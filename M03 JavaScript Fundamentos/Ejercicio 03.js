@@ -40,7 +40,7 @@ function esImpar(num) {
    // Retorna True si "num" es impar.
    // De lo contrario, retorna False.
    // Tu código:
-   return num % 2 !==0
+   return num % 2 !==0;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
